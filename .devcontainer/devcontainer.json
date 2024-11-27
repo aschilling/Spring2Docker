@@ -3,13 +3,15 @@
 {
 	"name": "Java",
 	"containerEnv": {
-        	"DISABLE_JAVA_BUILD": "true"
+        	"DISABLE_JAVA_BUILD": "true",
+		"java.compile.nullAnalysis.mode": "automatic"
     	},
-	"image": "mcr.microsoft.com/vscode/devcontainers/java:0-17-bullseye",
-	"features": {
-    		"ghcr.io/devcontainers/features/docker-in-docker:1": {}
+	"image": "mcr.microsoft.com/devcontainers/universal:2",    	
+	"features": {        	
+		"ghcr.io/devcontainers/features/java:1": {            		
+			"version": "17"        	
+		}    	
 	},
-
 	// Configure tool-specific properties.
 	"customizations": {
 		// Configure properties specific to VS Code.
