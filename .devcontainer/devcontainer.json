@@ -5,12 +5,10 @@
 	"containerEnv": {
         	"DISABLE_JAVA_BUILD": "true"
     	},
-	"image": "mcr.microsoft.com/devcontainers/universal:2",
-    	"features": {
-        	"ghcr.io/devcontainers/features/java:1": {
-            		"version": "17"
-        	}
-    	},
+	"image": "mcr.microsoft.com/vscode/devcontainers/java:0-17-bullseye",
+	"features": {
+    		"ghcr.io/devcontainers/features/docker-in-docker:1": {}
+	},
 
 	// Configure tool-specific properties.
 	"customizations": {
